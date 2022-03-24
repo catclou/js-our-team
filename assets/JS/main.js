@@ -12,7 +12,47 @@
 // del team, come nel mockup allegato.
 
 // 1) Creo un array di oggetti in cui ogni oggetto è un membro del team
+let membriTeam = [
 
+    {
+        'Nome': 'Wayne Barnett',
+        'Ruolo': 'Founder & CEO',
+        'Img': 'wayne-barnett-founder-ceo.jpg'
+    },
+
+    {
+        'Nome': 'Angela Caroll',
+        'Ruolo': 'Chief Editor',
+        'Img': 'angela-caroll-chief-editor.jpg'
+    },
+
+    {
+        'Nome': 'Walter Gordon',
+        'Ruolo': 'Office Manager',
+        'Img': 'walter-gordon-office-manager.jpg'
+    },
+
+    {
+        'Nome': 'Angela Lopez',
+        'Ruolo': 'Social Media Manager',
+        'Img': 'angela-lopez-social-media-manager.jpg'
+    },
+
+    {
+        'Nome': 'Scott Estrada',
+        'Ruolo': 'Developer',
+        'Img': 'scott-estrata-developer.jpg'
+    },
+
+    {
+        'Nome': 'Barbara Ramos',
+        'Ruolo': 'Graphic Designer',
+        'Img': 'barbara-ramos-graphic-designer.jpg'
+    }
+
+]
+
+console.log(membriTeam);
 
 // 2) Stampo in console l'elenco dei membri del team
 
