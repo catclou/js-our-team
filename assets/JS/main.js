@@ -70,8 +70,8 @@ for (let i=0; i<membriTeam.length; i++) {
 
 for (i=0; i<membriTeam.length; i++) {
     document.getElementById("membri-team").innerHTML += `
-        <div class="card" style="width: 18rem;">
-            <img src="./assets/img/${membriTeam[i]["Img"]}" class="card-img-top">
+        <div class="card my-2 mx-3" style="width: 18rem;">
+            <img src="./assets/img/${membriTeam[i]["Img"]}" class="card-img-top mt-2">
             <div class="card-body">
                 <h5 class="card-title text-center">${membriTeam[i]["Nome"]}</h5>
                 <p class="card-text text-center fw-light">${membriTeam[i]["Ruolo"]}</p>
