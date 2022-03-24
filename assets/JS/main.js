@@ -60,8 +60,8 @@ console.log(membriTeam);
 for (let i=0; i<membriTeam.length; i++) {
 	for (let key in membriTeam[i] ) {
 		console.log( `${key}: ${membriTeam[i][key]}` );
+
+        // 3) Stampo in maniera dinamica in un contenitore HTML
+        document.getElementById("membri-team").innerHTML += `<p class="border"><span class="fw-bold">${key}:</span> ${membriTeam[i][key]}</p>`;
 	}
 }
-
-
-// 3) Stampo in maniera dinamica in un contenitore HTML
