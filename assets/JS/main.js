@@ -54,7 +54,14 @@ let membriTeam = [
 
 console.log(membriTeam);
 
+
 // 2) Stampo in console l'elenco dei membri del team
+// scrivendo separatamente i dettagli di ciascun membro
+for (let i=0; i<membriTeam.length; i++) {
+	for (let key in membriTeam[i] ) {
+		console.log( `${key}: ${membriTeam[i][key]}` );
+	}
+}
 
 
 // 3) Stampo in maniera dinamica in un contenitore HTML
