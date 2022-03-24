@@ -41,7 +41,7 @@ let membriTeam = [
     {
         'Nome': 'Scott Estrada',
         'Ruolo': 'Developer',
-        'Img': 'scott-estrata-developer.jpg'
+        'Img': 'scott-estrada-developer.jpg'
     },
 
     {
@@ -62,6 +62,19 @@ for (let i=0; i<membriTeam.length; i++) {
 		console.log( `${key}: ${membriTeam[i][key]}` );
 
         // 3) Stampo in maniera dinamica in un contenitore HTML
-        document.getElementById("membri-team").innerHTML += `<p class="border"><span class="fw-bold">${key}:</span> ${membriTeam[i][key]}</p>`;
+        // document.getElementById("membri-team").innerHTML += `<p class="border"><span class="fw-bold">${key}:</span> ${membriTeam[i][key]}</p>`;
 	}
+}
+
+// 4) BONUS: stampo nelle card
+
+for (i=0; i<membriTeam.length; i++) {
+    document.getElementById("membri-team").innerHTML += `
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/img/${membriTeam[i]["Img"]}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title text-center">${membriTeam[i]["Nome"]}</h5>
+                <p class="card-text text-center fw-light">${membriTeam[i]["Ruolo"]}</p>
+            </div>
+        </div>`;
 }
